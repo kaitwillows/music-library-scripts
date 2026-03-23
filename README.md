@@ -34,7 +34,19 @@ root/flac/[ARTIST ALIAS]/[ALBUM NAME] [(4-digit year)] [[SOURCE]]/
   [2-digit track number] [track name].flac
 ```
   - `bandcamp/`
-    - metadata will **not** be altered fromasfjaisudhgjoiasjdoigasdgasdgoijasdgi
-   
+    - metadata will **not** be altered from here.
+    - file names will be changed though.
+  - `soulseek/`
+
+## soulseek downloads
+genuinely dont know if this is possible, but i want a script that takes an album string query, and searches for that using slskd prioritizing:
+- flac release (try to double check it's not fake)
+- tagged `[bandcamp]`
+- has ALL songs in the album (double check with bandcamp if possible, if not, musicbrainz)
+
+then:
+- strip all tags but title, artist(s), album artist(s), track number, and disk number
+- ensure they match preferably something other than musicbrainz because musicbrainz kinda fucks things up sometimes uaghh and idk
+
 
 
